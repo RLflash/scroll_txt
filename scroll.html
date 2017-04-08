@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px
+			}
+			
+			#up {
+				background: pink;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				position: absolute;
+				width: 300px;
+				height: 200px;
+				overflow: hidden;
+				border: 1px solid red;
+				border-radius: 5px
+			}
+			
+			ul {
+				width: 80%;
+				margin: 0 auto;
+			}
+			/*ul li:nth-child(even){background:olive}*/
+			
+			li {
+				list-style: none
+			}
+		</style>
+		<div id="up">
+
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+
+			</ul>
+		</div>
+	</body>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+	<script src="scroll.js"></script>
+	<script>
+		$("#up").scroll(500, 10);
+	</script>
+
+</html>
